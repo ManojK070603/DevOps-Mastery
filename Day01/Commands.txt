@@ -1,0 +1,12 @@
+pwd
+ls
+ls -l
+ls -a
+cd
+mkdir
+touch
+cat
+clear
+whoami
+uname -a
+lsb_release -a
