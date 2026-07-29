@@ -1,0 +1,9 @@
+INFO UserLogin Manoj
+INFO UserLogin Rahul
+ERROR DatabaseConnection
+INFO UserLogin Anita
+WARNING HighMemory
+ERROR DatabaseConnection
+INFO UserLogin Manoj
+ERROR DiskFull
+INFO BackupCompleted
