@@ -1,0 +1,54 @@
+DAY 7 - BASH SCRIPTING & AUTOMATION
+
+1. What is Bash?
+Bash (Bourne Again Shell) is a command-line shell and scripting language used to interact with Linux systems and automate tasks.
+
+2. What is Shell Scripting?
+A shell script is a file containing Linux commands that are executed automatically.
+
+3. What is a Shebang?
+#!/bin/bash tells Linux to execute the script using the Bash interpreter.
+
+4. Difference between $1, $# and $@?
+$1  -> First argument
+$#  -> Number of arguments
+$@  -> All arguments
+
+5. What does $? represent?
+The exit status of the previous command.
+0 = Success
+Non-zero = Failure
+
+6. What does exit code 0 mean?
+The command executed successfully.
+
+7. Difference between for loop and while loop?
+for loop:
+- Used when the number of iterations is known.
+
+while loop:
+- Used when looping depends on a condition.
+
+8. How do you check whether a file exists?
+-f
+
+9. How do you check whether a directory exists?
+-d
+
+10. What is command substitution?
+Using $(command) to store command output in a variable.
+
+11. What does && mean?
+Run the next command only if the previous command succeeds.
+
+12. What does || mean?
+Run the next command only if the previous command fails.
+
+13. Why are functions useful?
+Functions improve readability, reusability and maintenance.
+
+14. How do you make a Bash script executable?
+chmod +x filename.sh
+
+15. Why is Bash important for DevOps?
+Because DevOps engineers automate deployments, backups, monitoring, server maintenance and CI/CD tasks using Bash.
