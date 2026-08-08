@@ -1,0 +1,179 @@
+DAY 9 - LINUX PACKAGE MANAGEMENT & SERVER BOOTSTRAPPING
+
+1. APT
+
+APT stands for Advanced Package Tool.
+
+It is used on Debian-based Linux systems such as Ubuntu.
+
+Common commands:
+
+sudo apt update
+sudo apt upgrade
+sudo apt install <package>
+sudo apt remove <package>
+sudo apt purge <package>
+sudo apt autoremove
+
+
+2. apt update vs apt upgrade
+
+apt update:
+Refreshes the package information from repositories.
+
+apt upgrade:
+Installs newer versions of already installed packages.
+
+
+3. Package Search
+
+apt search <package>
+Searches available packages.
+
+apt show <package>
+Displays detailed package information.
+
+
+4. Installed Packages
+
+apt list --installed
+Lists installed packages.
+
+dpkg -l
+Lists Debian packages.
+
+dpkg -l | grep <name>
+Searches installed packages.
+
+
+5. Package Removal
+
+apt remove:
+Removes software but normally keeps configuration files.
+
+apt purge:
+Removes software and configuration files.
+
+apt autoremove:
+Removes unused dependencies.
+
+
+6. .deb Packages
+
+.deb is the package format commonly used by Debian and Ubuntu.
+
+Install:
+
+sudo dpkg -i package.deb
+
+Fix dependencies:
+
+sudo apt install -f
+
+
+7. Snap
+
+Snap is a package management system developed by Canonical.
+
+Useful commands:
+
+snap list
+sudo snap install <package>
+
+
+8. Linux Services
+
+systemctl is used to manage system services.
+
+Examples:
+
+sudo systemctl status nginx
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+sudo systemctl disable nginx
+
+
+start:
+Starts a service immediately.
+
+enable:
+Configures a service to start automatically at boot.
+
+
+9. Important Software Installed
+
+Git
+Java 21
+Maven
+Nginx
+PostgreSQL
+Curl
+Wget
+
+
+10. Server Bootstrapping
+
+Server bootstrapping means automatically preparing a new server with the required software and configuration.
+
+Instead of manually configuring many servers, automation scripts can perform the setup.
+
+
+11. Bootstrap Script
+
+bootstrap.sh:
+
+- Updates package lists
+- Installs required software
+- Verifies installations
+- Generates a bootstrap report
+
+
+12. Software Audit
+
+software_audit.sh checks whether important software is installed.
+
+It uses:
+
+command -v <command>
+
+to determine whether a command is available.
+
+
+13. DevOps Workflow
+
+New Server
+    |
+    v
+Update Packages
+    |
+    v
+Install Software
+    |
+    v
+Verify Software
+    |
+    v
+Configure Services
+    |
+    v
+Generate Report
+    |
+    v
+Deploy Application
+
+
+14. Important Interview Questions
+
+What is APT?
+What is the difference between apt update and apt upgrade?
+What is a package repository?
+What is the difference between apt remove and apt purge?
+What does apt autoremove do?
+What is dpkg?
+What is a .deb package?
+What is Snap?
+Why verify software installations?
+What is server bootstrapping?
+Why is infrastructure automation important?

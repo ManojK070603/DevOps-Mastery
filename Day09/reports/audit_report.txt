@@ -1,0 +1,33 @@
+==========================================
+          SOFTWARE AUDIT REPORT
+==========================================
+Date     : Sat Aug  8 13:58:51 UTC 2026
+Hostname : DESKTOP-ITJND1M
+
+Git : INSTALLED
+  Version: git version 2.53.0
+
+Java : INSTALLED
+  Version: openjdk 21.0.11 2026-04-21
+
+Maven : INSTALLED
+  Version: [1mApache Maven 3.9.12[m
+
+Docker : INSTALLED
+  Version: 
+
+Curl : INSTALLED
+  Version: curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+
+Wget : INSTALLED
+  Version: GNU Wget 1.25.0 built on linux-gnu.
+
+Nginx : INSTALLED
+  Version: nginx: invalid option: "-"
+
+PostgreSQL : INSTALLED
+  Version: psql (PostgreSQL) 18.4 (Ubuntu 18.4-0ubuntu0.26.04.1)
+
+==========================================
+           AUDIT COMPLETED
+==========================================
