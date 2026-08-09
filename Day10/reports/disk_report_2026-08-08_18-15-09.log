@@ -1,0 +1,115 @@
+========================================
+       DISK MONITORING REPORT
+========================================
+
+Date     : Sat Aug  8 18:15:09 UTC 2026
+Hostname : DESKTOP-ITJND1M
+User     : manoj
+
+========== FILESYSTEM USAGE ==========
+Filesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  929M     0  929M   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none           tmpfs    929M  4.0K  929M   1% /mnt/wsl
+drivers        9p       232G  161G   72G  70% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  2.2G  954G   1% /
+none           tmpfs    929M  100K  929M   1% /mnt/wslg
+none           overlay  929M     0  929M   0% /usr/lib/wsl/lib
+rootfs         rootfs   924M  2.7M  921M   1% /init
+none           tmpfs    929M  788K  928M   1% /run
+none           tmpfs    929M     0  929M   0% /run/lock
+none           tmpfs    929M  1.1M  928M   1% /run/shm
+none           overlay  929M   76K  929M   1% /mnt/wslg/versions.txt
+none           overlay  929M   76K  929M   1% /mnt/wslg/doc
+C:\            9p       232G  161G   72G  70% /mnt/c
+D:\            9p       247G  152G   95G  62% /mnt/d
+E:\            9p       391G   26G  366G   7% /mnt/e
+F:\            9p       293G  544M  293G   1% /mnt/f
+tmpfs          tmpfs    929M     0  929M   0% /tmp
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/console-getty.service
+tmpfs          tmpfs    186M   12K  186M   1% /run/user/1000
+
+Root Filesystem Usage: 1%
+Root Filesystem Status: HEALTHY
+
+========== INODE USAGE ==========
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+none             233K     5  233K    1% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none             233K     2  233K    1% /mnt/wsl
+drivers           999 -976K  977K     - /usr/lib/wsl/drivers
+/dev/sdd          64M   57K   64M    1% /
+none             233K    33  232K    1% /mnt/wslg
+none             233K     5  233K    1% /usr/lib/wsl/lib
+rootfs           231K    12  231K    1% /init
+none             233K   563  232K    1% /run
+none             233K     2  233K    1% /run/lock
+none             233K     3  233K    1% /run/shm
+none             233K    55  232K    1% /mnt/wslg/versions.txt
+none             233K    55  232K    1% /mnt/wslg/doc
+C:\               999 -976K  977K     - /mnt/c
+D:\               999 -976K  977K     - /mnt/d
+E:\               999 -976K  977K     - /mnt/e
+F:\               999 -976K  977K     - /mnt/f
+tmpfs            1.0M    12  1.0M    1% /tmp
+none             1.0K     1  1023    1% /run/credentials/systemd-journald.service
+none             1.0K     1  1023    1% /run/credentials/systemd-resolved.service
+none             1.0K     1  1023    1% /run/credentials/getty@tty1.service
+none             1.0K     1  1023    1% /run/credentials/console-getty.service
+tmpfs             47K    44   47K    1% /run/user/1000
+
+========== TOP DIRECTORIES ==========
+4.0K	/home/manoj/scripts
+16K	/home/manoj/.local
+24K	/home/manoj/.config
+24K	/home/manoj/SecureProject
+32K	/home/manoj/Linuxpractice
+52K	/home/manoj/Developer
+52K	/home/manoj/Linux-Labs
+56K	/home/manoj/.cache
+1.5M	/home/manoj/DevOps-Mastery
+1.8M	/home/manoj
+
+========== LARGE FILES (>100MB) ==========
+
+========== FILESYSTEM TYPES ==========
+Filesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  929M     0  929M   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none           tmpfs    929M  4.0K  929M   1% /mnt/wsl
+drivers        9p       232G  161G   72G  70% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  2.2G  954G   1% /
+none           tmpfs    929M  100K  929M   1% /mnt/wslg
+none           overlay  929M     0  929M   0% /usr/lib/wsl/lib
+rootfs         rootfs   924M  2.7M  921M   1% /init
+none           tmpfs    929M  788K  928M   1% /run
+none           tmpfs    929M     0  929M   0% /run/lock
+none           tmpfs    929M  1.1M  928M   1% /run/shm
+none           overlay  929M   76K  929M   1% /mnt/wslg/versions.txt
+none           overlay  929M   76K  929M   1% /mnt/wslg/doc
+C:\            9p       232G  161G   72G  70% /mnt/c
+D:\            9p       247G  152G   95G  62% /mnt/d
+E:\            9p       391G   26G  366G   7% /mnt/e
+F:\            9p       293G  544M  293G   1% /mnt/f
+tmpfs          tmpfs    929M     0  929M   0% /tmp
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/console-getty.service
+tmpfs          tmpfs    186M   12K  186M   1% /run/user/1000
+
+========== SWAP STATUS ==========
+Swap:          1.0Gi          0B       1.0Gi
+
+NAME     TYPE      SIZE USED PRIO
+/dev/sdc partition   1G   0B   -2
+
+========== SUGGESTED ACTIONS ==========
+Disk usage is currently healthy.
+
+========== OVERALL STATUS ==========
+HEALTHY
+
+========================================
+       REPORT COMPLETED
+========================================

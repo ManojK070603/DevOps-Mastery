@@ -1,0 +1,190 @@
+DAY 10 - LINUX STORAGE AND DISK MONITORING
+
+1. STORAGE HIERARCHY
+
+Physical Disk
+    ↓
+Partition
+    ↓
+Filesystem
+    ↓
+Mount Point
+    ↓
+Files and Directories
+
+
+2. PARTITION
+
+A partition is a section of a physical disk.
+
+Example:
+
+/dev/sda
+├── /dev/sda1
+├── /dev/sda2
+└── /dev/sda3
+
+
+3. FILESYSTEM
+
+A filesystem organizes and stores files on a storage device.
+
+Common filesystems:
+
+ext4
+XFS
+Btrfs
+NTFS
+
+
+4. lsblk
+
+lsblk means List Block Devices.
+
+It displays disks, partitions and block devices.
+
+
+5. df
+
+df shows filesystem-level disk usage.
+
+Example:
+
+df -h
+
+The -h option means human-readable.
+
+
+6. du
+
+du shows the amount of space consumed by files and directories.
+
+Example:
+
+du -sh directory
+
+
+7. df vs du
+
+df:
+Shows filesystem space usage.
+
+du:
+Shows space consumed by files/directories.
+
+Think:
+
+df → How much space is available?
+
+du → What is consuming the space?
+
+
+8. INODES
+
+An inode stores metadata about a file.
+
+A filesystem can run out of inodes even when disk space is still available.
+
+Check inode usage:
+
+df -i
+
+
+9. MOUNT POINT
+
+A mount point is a directory where a filesystem is attached and made accessible.
+
+Example:
+
+/dev/sdb1
+    ↓
+  /data
+
+
+10. MOUNT
+
+mount attaches a filesystem to a directory.
+
+Example:
+
+sudo mount /dev/sdb1 /data
+
+
+11. UMOUNT
+
+umount detaches a mounted filesystem.
+
+Example:
+
+sudo umount /data
+
+
+12. /var/log
+
+/var/log contains system and application logs.
+
+Logs can consume significant disk space on production servers.
+
+
+13. SWAP
+
+Swap is disk space used as virtual memory when RAM is under pressure.
+
+Check:
+
+free -h
+swapon --show
+
+
+14. LOGROTATE
+
+logrotate manages and rotates log files to prevent logs from consuming excessive disk space.
+
+
+15. PRODUCTION TROUBLESHOOTING
+
+If a server reports:
+
+No space left on device
+
+Check:
+
+df -h
+df -i
+du -sh /*
+sudo du -sh /var/log/*
+find large files
+
+
+16. DISK THRESHOLDS
+
+Below 70%:
+HEALTHY
+
+70% - 89%:
+WARNING
+
+90% or higher:
+CRITICAL
+
+
+17. DAY 10 PROJECT
+
+disk_monitor.sh automatically reports:
+
+Filesystem usage
+Inode usage
+Top directories
+Large files
+Filesystem types
+Swap status
+Disk health status
+
+The script generates a timestamped report.
+
+
+18. IMPORTANT DEVOPS PRINCIPLE
+
+Monitoring scripts should observe systems first.
+
+They should not automatically delete or modify production data without deliberate controls.
