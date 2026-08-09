@@ -1,0 +1,5 @@
+ssh dev-server "uptime"
+ssh dev-server "df -h"
+ssh dev-server "free -h"
+ssh dev-server "ss -tuln"
+ssh dev-server "ps -ef"
