@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.*
+
+# Private keys
+*.pem
+*.key
+id_rsa
+id_ed25519
+*_lab
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
