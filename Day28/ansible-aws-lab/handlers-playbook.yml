@@ -1,0 +1,26 @@
+---
+- name: Learn Ansible handlers
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Create demo Nginx configuration
+      copy:
+        content: |
+          server {
+              listen 8080;
+              server_name ansible-production-server;
+
+              location / {
+                  return 200 "Hello from Ansible!\n";
+              }
+          }
+        dest: /etc/nginx/conf.d/ansible-demo.conf
+        mode: "0644"
+      notify: Restart nginx
+
+  handlers:
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted

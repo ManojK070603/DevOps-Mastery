@@ -1,0 +1,12 @@
+---
+- name: Manage Linux user
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Create ansibleuser
+      user:
+        name: ansibleuser
+        state: present
+        shell: /bin/bash
+        create_home: true

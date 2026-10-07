@@ -1,0 +1,20 @@
+---
+- name: Practice Ansible file management
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Create application directory
+      file:
+        path: /opt/ansible-demo
+        state: directory
+        mode: "0755"
+
+    - name: Create application configuration
+      copy:
+        content: |
+          application: ansible-demo
+          environment: development
+          managed_by: ansible
+        dest: /opt/ansible-demo/app.yml
+        mode: "0644"

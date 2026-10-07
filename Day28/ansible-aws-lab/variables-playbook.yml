@@ -1,0 +1,19 @@
+---
+- name: Configure web server with variables
+  hosts: web
+  become: true
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: Install web package
+      apt:
+        name: "{{ web_package }}"
+        state: present
+
+    - name: Ensure web service is running
+      service:
+        name: "{{ web_package }}"
+        state: started
+        enabled: true
